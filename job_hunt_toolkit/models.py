@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
+from django import forms
 from django.forms.fields import DateField
 
 # Create your models here.
@@ -15,11 +16,7 @@ class Application(models.Model):
     def __str__(self):
         return self.name
 
-    def hello(self):
-        return f"Hello my name is.. {self.name}"
-
-    def template(self):
-        return f"<li>{self.name}</li>"
-
-class Checklick(models.Model):
+class Checklist (forms.Form):
+    item_name  = models.TextField(null=True, blank=True)
+    checkbox = forms.BooleanField (initial = False)
     user = models.ForeignKey(Application, on_delete=models.CASCADE, related_name='checks')
