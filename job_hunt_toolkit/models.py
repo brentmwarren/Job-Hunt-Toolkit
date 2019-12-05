@@ -19,4 +19,4 @@ class Application(models.Model):
 class Checklist (forms.Form):
     item_name  = models.TextField(null=True, blank=True)
     checkbox = forms.BooleanField (initial = False)
-    user = models.ForeignKey(Application, on_delete=models.CASCADE, related_name='checks')
+    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='checks')

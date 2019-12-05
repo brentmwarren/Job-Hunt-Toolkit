@@ -68,6 +68,7 @@ TEMPLATES = [
     },
 ]
 
+
 WSGI_APPLICATION = 'job_hunt_toolkit_django.wsgi.application'
 
 

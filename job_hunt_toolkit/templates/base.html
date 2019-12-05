@@ -1,0 +1,17 @@
+{% load static %}
+
+<html>
+    <head>
+        <title>Job Hunt Tool Kit base.html</title>
+        <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    </head>
+    <body>
+        <h1>Tun.r</h1>
+        <nav>
+            <a href="#">Songs</a>
+            <a href="#">Artists</a>
+        </nav>
+        {% block content %}
+        {% endblock %}
+    </body>
+</html>
