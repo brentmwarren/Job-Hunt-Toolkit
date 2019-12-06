@@ -75,15 +75,6 @@ a.delete {
 a.delete {
   background-color: red;
 }
-
-.artist-photo {
-  width: 400px;
-}
-
-span.nationality {
-  font-size: .5em;
-}
-
 .user-info {
   float: right;
 }

@@ -35,7 +35,9 @@ def application_create(request):
         form = ApplicationForm(request.POST)
         if form.is_valid():
             # application["user"] = "put in user id from django admin portal"
-            application = form.save()
+            application = form.save(commit=False)
+            application.user = request.user
+            application.save()
             return redirect('application_list', pk=application.pk)
     else:
         form = ApplicationForm()

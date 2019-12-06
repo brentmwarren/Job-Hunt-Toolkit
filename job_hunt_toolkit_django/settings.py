@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'job_hunt_toolkit',
-    'accounts',
+    'accounts'
 ]
 
 MIDDLEWARE = [
