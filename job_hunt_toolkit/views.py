@@ -14,13 +14,11 @@ from django.contrib.auth.decorators import login_required
 from django.views.decorators.http import require_http_methods
 
 
-
-
-
 # from .models import Checklist
+# from .forms import ChecklistForm
 from .models import Application
 from .forms import ApplicationForm
-# from .forms import ChecklistForm
+
 
 # Create your views here.
 

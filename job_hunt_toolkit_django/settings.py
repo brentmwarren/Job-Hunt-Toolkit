@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'job_hunt_toolkit'
+    'job_hunt_toolkit',
+    'accounts',
 ]
 
 MIDDLEWARE = [
