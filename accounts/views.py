@@ -51,3 +51,7 @@ def login(request):
 
     else:
         return render(request, 'accounts/login.html')
+
+def logout(request):
+    auth.logout(request)
+    return redirect('application_list')        

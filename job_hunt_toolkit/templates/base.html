@@ -8,11 +8,22 @@
     <body>
         <h1>Job Hunt Toolkit</h1>
         <nav>
+            {% if user.is_authenticated %}
+             Welcome {{ user.username }}
             <a href="#">Getting Started</a>
             <a href="#">Resume Builder</a>
             <a href="#">Linkedin Builder</a>
             <a href="#">Application Tracker</a>
             <a href="#">Interviewing Tips</a>
+            <a href="{% url 'logout' %}">Signout</a>
+            {% else %}
+            <a href="#">Getting Started</a>
+            <a href="#">Resume Builder</a>
+            <a href="#">Linkedin Builder</a>
+            <a href="#">Application Tracker</a>
+            <a href="#">Interviewing Tips</a>
+            <a href="{% url 'login' %}">Login</a>
+            {% endif %}
         </nav>
         {% block content %}
         {% endblock %}

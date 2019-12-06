@@ -2,6 +2,7 @@
 from django.shortcuts import render
 from .models import Application
 from django.http import HttpResponse
+from django.contrib.auth.decorators import login_required
 
 
 import json
@@ -10,7 +11,6 @@ from django.shortcuts import render, redirect
 from django.http import HttpResponse, JsonResponse
 from django.core import serializers
 from django.core.exceptions import PermissionDenied
-from django.contrib.auth.decorators import login_required
 from django.views.decorators.http import require_http_methods
 
 
@@ -29,7 +29,7 @@ def application_list(request):
     applications = Application.objects.all()
     return render(request, 'application_list.html', {'applications': applications})
 
-
+@login_required
 def application_create(request):
     if request.method == 'POST':
         form = ApplicationForm(request.POST)
