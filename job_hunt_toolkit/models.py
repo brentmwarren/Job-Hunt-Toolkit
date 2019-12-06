@@ -11,7 +11,7 @@ class Application(models.Model):
     date_applied = models.DateField(null=True, blank=True)
     company_notes = models.TextField(null=True, blank=True)
     personal_notes = models.TextField(null=True, blank=True)
-    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='applications')
+    # user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='applications')
 
     def __str__(self):
         return self.name
