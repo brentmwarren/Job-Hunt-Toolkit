@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h2>
+  {{ application.name }} application <a href="{% url 'application_edit' pk=application.pk %}">(edit)</a>
+  <a href="{% url 'application_delete' pk=application.pk %}" class="delete">delete</a>
+</h2>
+
+
+  {{ artist.name }}
+</a>
+<ul>
+        <li>          
+          <p>{{application.name}}</p>
+          <p>{{application.job_title}}</p>
+          <p>{{application.job_url}}</p>
+          <p>{{application.date_applied }}</p>
+          <p>{{application.company_notes }}</p>
+          <p>{{application.personal_notes}}</p>
+        </li>
+
+</ul>
+
+{% endblock %}
