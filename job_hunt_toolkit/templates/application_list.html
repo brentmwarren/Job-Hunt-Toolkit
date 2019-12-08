@@ -26,7 +26,7 @@
     <h2>linkedin stuff</h2>
 </section>
 
-<section class="page" id="application-page">
+<!-- <section class="page" id="application-page">
     <h2>Applications <a href="{% url 'application_create' %}">(+)</a></h2>
     <ul>
         {% for application in applications %}
@@ -38,6 +38,27 @@
             </li>
         {% endfor %}
     </ul>
+</section> -->
+<section class="page" id="application-page">
+<h4>Applications <a href="{% url 'application_create' %}">(+)</a></h4>
+<table>
+        <thead>
+            <tr>
+                <th>Company Name</th>
+                <th>Job Title</th>
+                <th>Date Applied</th>
+            </tr>
+        </thead>
+        {% for application in applications %}
+        <tbody>
+            <tr>
+                <td>{{application.name}}</td>
+                <td>{{application.job_title}}</td>
+                <td>{{application.date_applied}}</td>
+            </tr>
+        </tbody>
+        {% endfor %}
+    </table>
 </section>
 
 <section class="page" id="tips-page">
