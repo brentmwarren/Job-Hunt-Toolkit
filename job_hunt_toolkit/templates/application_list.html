@@ -1,19 +1,60 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<h2>Applications <a href="{% url 'application_create' %}">(+)</a></h2>
-<ul>
-    {% for application in applications %}
-    
-        <li>
-            <h3><a href="{% url 'application_detail' pk=application.pk %}">Company Name: {{application.name}}</a></h3>
-            <h3>Job Title: {{application.job_title}}</h3>
-            <h3>Date Applied: {{application.date_applied}}</h3>
-            <h3>Job Posting Url: {{application.job_url}}</h3>
-            <h3>Notes on Company: {{application.company_notes}}</h3>
-            <h3>Personal Notes: {{application.personal_notes}}</h3>
-        </li>
-    {% endfor %}
-</ul>
+
+<section class="page" id="intro-page">
+        <h2>intro stuff</h2>
+        <h2>intro stuff</h2>
+        <h2>intro stuff</h2>
+        <h2>intro stuff</h2>
+        <h2>intro stuff</h2>
+</section>
+
+<section class="page" id="resume-page">
+        <p>resume stuff<p>
+        <h2>resume stuff</h2>
+        <h2>resume stuff</h2>
+        <h2>resume stuff</h2>
+        <h2>resume stuff</h2>
+</section>
+
+<section class="page" id="linkedin-page">
+    <p>linkedin stuff</p>
+    <h2>linkedin stuff</h2>
+    <h2>linkedin stuff</h2>
+    <h2>linkedin stuff</h2>
+    <h2>linkedin stuff</h2>
+</section>
+
+<section class="page" id="application-page">
+    <h2>Applications <a href="{% url 'application_create' %}">(+)</a></h2>
+    <ul>
+        {% for application in applications %}
+        
+            <li>
+                <h5><a href="{% url 'application_detail' pk=application.pk %}">Company Name: {{application.name}}</a></h5>
+                <p>Job Title: {{application.job_title}}</p>
+                <p>Date Applied: {{application.date_applied}}</p>
+            </li>
+        {% endfor %}
+    </ul>
+</section>
+
+<section class="page" id="tips-page">
+        <p>interview tips</p>
+        <h2>interview tips</h2>
+        <h2>interview tips</h2>
+        <h2>interview tips</h2>
+        <h2>interview tips</h2>
+</section>
+
+<section class="page" id="resources-page">
+        <h2>resourcse</h2>
+        <h2>resourcse</h2>
+        <h2>resourcse</h2>
+        <h2>resourcse</h2>
+        <h2>resourcse</h2>
+</section>
+
 {% endblock %}
 

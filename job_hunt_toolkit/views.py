@@ -25,8 +25,9 @@ from .forms import ApplicationForm
 def home(request):
     return HttpResponse("Goodbye rocket ship. Hello Home.")
 
+@login_required
 def application_list(request):
-    applications = Application.objects.all()
+    applications = Application.objects.filter(user=request.user)
     return render(request, 'application_list.html', {'applications': applications})
 
 @login_required
@@ -38,15 +39,18 @@ def application_create(request):
             application = form.save(commit=False)
             application.user = request.user
             application.save()
-            return redirect('application_list', pk=application.pk)
+            return redirect('application_list')
+            # return redirect(reverse('application_list') + '#application-page'
     else:
         form = ApplicationForm()
     return render(request, 'application_form.html', {'form': form}) 
 
+@login_required
 def application_detail(request, pk):
     application = Application.objects.get(id=pk)
     return render(request, 'application_detail.html', {'application': application})       
 
+@login_required
 def application_edit(request, pk):
     application = Application.objects.get(pk=pk)
     if request.method == "POST":
@@ -58,6 +62,7 @@ def application_edit(request, pk):
         form = ApplicationForm(instance=application)
     return render(request, 'application_form.html', {'form': form})   
 
+@login_required
 def application_delete(request, pk):
     Application.objects.get(id=pk).delete()
     return redirect('application_list')     
