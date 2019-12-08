@@ -1,29 +1,28 @@
-body {
+/* body {
   font-family: 'Helvetica Neue', sans-serif;
-  max-width: 50em;
+  max-width: auto;
   margin: auto;
   padding: 2em 1em;
-}
+} */
 
-nav a {
+/* nav a {
   border: 1px solid black;
   margin: .5em;
   padding: .5em;
   background-color: #eeeeee;
-}
+} */
 
-nav a:hover {
+/* nav a:hover {
   background-color: orange;
   color: blue;
-}
+} */
 
-a,
-a:visited {
+/* a,a:visited {
   text-decoration: none;
   color: blue;
-}
+} */
 
-a:hover {
+/* a:hover {
   background-color: #ccc;
 }
 
@@ -92,4 +91,10 @@ a.no-fav {
 .fav:visited,
 .no-fav:visited {
   text-decoration: none;
-}
+} */
+
+/* ################## above Code from spoofy #################### */
+
+
+
+/* Materialize nav bar */

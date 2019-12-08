@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+
+<script defer src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <!-- Compiled and minified CSS -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 <!-- Compiled and minified JavaScript -->
@@ -14,31 +16,59 @@
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <!--CSS-->
 <link rel="stylesheet" href="{% static 'css/main.css' %}">
-        <title>JHT</title>
-        <link rel="icon" href="images/transparent logo black.png" type="image/png">
-        <link rel="stylesheet" href="{% static 'css/main.css' %}">
+<!--Materialize JS-->
+<script defer src="{% static 'scripts/materialize.js' %}"></script>
+
+<title>JHT</title>
+        <!-- <link rel="icon" href="images/transparent logo black.png" type="image/png"> -->
     </head>
     <body>
-        <h1>Job Hunt Toolkit</h1>
         <nav>
-            {% if user.is_authenticated %}
-            Welcome {{ user.username }}
-            <a href="#">Getting Started</a>
-            <a href="#">Resume Builder</a>
-            <a href="#">Linkedin Builder</a>
-            <a href="#">Application Tracker</a>
-            <a href="#">Interviewing Tips</a>
-            <a href="{% url 'logout' %}">Signout</a>
-            {% else %}
-            <a href="#">Getting Started</a>
-            <a href="#">Resume Builder</a>
-            <a href="#">Linkedin Builder</a>
-            <a href="#">Application Tracker</a>
-            <a href="#">Interviewing Tips</a>
-            <a href="{% url 'login' %}">Login</a>
-            <a href="{% url 'register' %}">Register</a>
-            {% endif %}
+            <div class="nav-wrapper">
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
+                <a href="#" class="brand-logo">Job Hunt Toolkit</a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        {% if user.is_authenticated %}
+                        Welcome {{ user.username }}
+                            <li><a href="#">Getting Started</a></li>
+                            <li><a href="#">Resume Builder</a></li>
+                            <li><a href="#">Linkedin Builder</a></li>
+                            <li><a href="#">Application Tracker</a></li>
+                            <li><a href="#">Interviewing Tips</a></li>
+                            <li><a href="{% url 'logout' %}">Signout</a></li>
+                        {% else %}
+                            <li><a href="#">Getting Started</a></li>
+                            <li><a href="#">Resume Builder</a></li>
+                            <li><a href="#">Linkedin Builder</a></li>
+                            <li><a href="#">Application Tracker</a></li>
+                            <li><a href="#">Interviewing Tips</a></li>
+                            <a href="{% url 'login' %}">Login</a>
+                            <a href="{% url 'register' %}">Register</a>
+                        {% endif %}
+                    </ul>
+            </div>
         </nav>
+            <ul class="sidenav" id="mobile-demo">
+                    {% if user.is_authenticated %}
+                    Welcome {{ user.username }}
+                        <li><a href="#">Getting Started</a></li>
+                        <li><a href="#">Resume Builder</a></li>
+                        <li><a href="#">Linkedin Builder</a></li>
+                        <li><a href="#">Application Tracker</a></li>
+                        <li><a href="#">Interviewing Tips</a></li>
+                        <li><a href="{% url 'logout' %}">Signout</a></li>
+                    {% else %}
+                        <li><a href="#">Getting Started</a></li>
+                        <li><a href="#">Resume Builder</a></li>
+                        <li><a href="#">Linkedin Builder</a></li>
+                        <li><a href="#">Application Tracker</a></li>
+                        <li><a href="#">Interviewing Tips</a></li>
+                        <a href="{% url 'login' %}">Login</a>
+                        <a href="{% url 'register' %}">Register</a>
+                    {% endif %}
+            </ul>
+
+
         {% block content %}
         {% endblock %}  
     </body>
