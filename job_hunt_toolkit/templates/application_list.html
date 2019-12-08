@@ -39,9 +39,10 @@
         {% endfor %}
     </ul>
 </section> -->
+
 <section class="page" id="application-page">
 <h4>Applications <a href="{% url 'application_create' %}">(+)</a></h4>
-<table>
+<table class="highlight">
         <thead>
             <tr>
                 <th>Company Name</th>
@@ -49,17 +50,20 @@
                 <th>Date Applied</th>
             </tr>
         </thead>
-        {% for application in applications %}
         <tbody>
-            <tr>
-                <td>{{application.name}}</td>
-                <td>{{application.job_title}}</td>
-                <td>{{application.date_applied}}</td>
-            </tr>
+            {% for application in applications %}
+                <tr>
+                    <td><a href="{% url 'application_detail' pk=application.pk %}">{{application.name}}</a></td>
+                    <td><a href="{% url 'application_detail' pk=application.pk %}">{{application.job_title}}</a></td>
+                    <td><a href="{% url 'application_detail' pk=application.pk %}">{{application.date_applied}}</a></td>
+                </tr>
+            </a>
+            {% endfor %}
         </tbody>
-        {% endfor %}
     </table>
 </section>
+
+<!-- ######################### -->
 
 <section class="page" id="tips-page">
         <p>interview tips</p>

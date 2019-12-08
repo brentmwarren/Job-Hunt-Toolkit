@@ -111,7 +111,9 @@ a.delete {
 }
 
 .register-form {
-  width: 50px;
+  max-width: 500px;
+  margin: auto;
+  margin-top: 15vh;
 }
 
 #intro-page{
