@@ -111,9 +111,15 @@ a.delete {
 }
 
 .register-form {
-  max-width: 500px;
+  max-width: 300px;
   margin: auto;
   margin-top: 15vh;
+}
+
+.login-form {
+    max-width: 300px;
+    margin: auto;
+    margin-top: 15vh;
 }
 
 #intro-page{

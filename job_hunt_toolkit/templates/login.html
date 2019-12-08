@@ -5,7 +5,7 @@
 <p style="background-color: salmon; padding: 10px;">{{ error }}</p>
 {% endif %}
 
-<form action="{% url 'login' %}" method="POST">
+<form class="login-form" action="{% url 'login' %}" method="POST">
 	{% csrf_token %}
 
 	<p>
