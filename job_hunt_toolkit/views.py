@@ -1,14 +1,13 @@
 
 from django.shortcuts import render
 from .models import Application
-from django.http import HttpResponse
+from django.http import HttpResponse, HttpResponseRedirect
 from django.contrib.auth.decorators import login_required
 
 
 import json
 
 from django.shortcuts import render, redirect
-from django.http import HttpResponse, JsonResponse
 from django.core import serializers
 from django.core.exceptions import PermissionDenied
 from django.views.decorators.http import require_http_methods
@@ -39,7 +38,8 @@ def application_create(request):
             application = form.save(commit=False)
             application.user = request.user
             application.save()
-            return redirect('application_list')
+            return HttpResponseRedirect("/#application-page")
+            # ('application_list' + '#application-page')
             # return redirect(reverse('application_list') + '#application-page'
     else:
         form = ApplicationForm()

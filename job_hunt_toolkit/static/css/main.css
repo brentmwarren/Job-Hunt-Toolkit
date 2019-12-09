@@ -1,5 +1,5 @@
 
- /* body {
+/* body {
   font-family: 'Helvetica Neue', sans-serif;
   max-width: auto;
   margin: auto;
@@ -96,6 +96,12 @@ a.delete {
 
 /* ################## above Code from spoofy #################### */
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .page {
   min-height: 100vh;
   margin-left: 0px;
@@ -106,15 +112,34 @@ a.delete {
 
 
 /*###############  Materialize edits ############# */
+nav{
+  background-color:rgba(64, 64, 65, 0.37);
+  }
 
 .brand-logo {
   margin-left: 20px;
 }
 
-.register-form {
+/* .register-form {
   max-width: 300px;
   margin: auto;
   margin-top: 15vh;
+} */
+
+#register-page{
+  /* min-height: 500px; */
+  color: whitesmoke;
+  margin-top: -63.98px;
+  background-image: url("https://images.pexels.com/photos/373076/pexels-photo-373076.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-size: cover;
+  /* position: relative; */
+}
+
+#register-form{
+  position: absolute; 
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .login-form {
@@ -123,18 +148,18 @@ a.delete {
     margin-top: 15vh;
 }
 
+
 #intro-page{
   margin-top: -63.98px;
-  background-image: url("../images/gotthis.jpg");
+  background-image: url("../images/blacknotes.jpg");
 }
 
 #resume-page{
   min-height: 50vh;
-  background: brown;
 }
 
 #linkedin-page{
-  background: rgba(0, 0, 255, 0.664);
+  background: #4875B4;
   min-height: 50vh
 }
 
@@ -142,18 +167,51 @@ a.delete {
 
 }
 
-#tips-page{
+#newapp-page{
+  color: whitesmoke;
+  margin-top: -100.98px;
+  background-image: url("https://images.pexels.com/photos/97076/pexels-photo-97076.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-size: cover;
+}
 
+.new-app{
+  color: whitesmoke;
+  font-size: medium;
+}
+
+form {
+  color: black;
+  padding:30px;
+  background: rgb(245, 245, 245);
+  border-radius: 10px;
+}
+
+textarea{
+  height: 100px;
+}
+
+h2{
+  padding-top: 100px;
+  text-align: center;
+}
+
+.new-app{
+  max-width: 400px;
+  margin: auto;
+  margin-top: 15vh;
+}
+
+.save {
+  margin-top: 15px;
+}
+
+#tips-page{
+  background:#ffc400;
+  min-height: 50vh
 }
 
 #resources-page{
 
-}
-
-
-
-nav{
-background-color:rgba(0, 171, 193, 0.37);
 }
 
 .parallax {
@@ -161,7 +219,6 @@ background-color:rgba(0, 171, 193, 0.37);
   background-image: url('../images/gotthis.jpg');
   background-repeat: no-repeat;
   background-size: auto;
-
   /* Full height */
   height: 100%;
 /* Create the parallax scrolling effect */
@@ -170,3 +227,52 @@ background-color:rgba(0, 171, 193, 0.37);
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+
+
+
+
+
+.intro-container {
+  padding-top: 35vh;
+  width: 50%;
+  margin: 0 auto;
+  min-width: 200px;
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+}
+
+.card-panel {
+  /* min-width: 300px; */
+  /* margin-left: 1px;
+  margin-right: 1px; */
+}
+
+/* .intro-card{
+  color: whitesmoke;
+  padding: 10px;
+  background-color: rgba(245, 245, 245, 0.158);
+  justify-content: center;
+} */
+
+
+/* .intro-card {
+  width: 70px;
+  height: 300px;
+  border: 1px solid #c3c3c3;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-align-content: center;
+  align-content: center;
+} */
+
+/* .intro-card {
+  display: inline-block;
+  padding-top: 35vh;
+  justify-content: center !important;
+  margin-left: 65vh;
+} */

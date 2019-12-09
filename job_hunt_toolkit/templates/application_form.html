@@ -1,10 +1,14 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    <h1>New Application</h1>
-    <form method="POST" class="artist-form">
+<section id="newapp-page" class="page">
+    <h2>New Application</h2>
+    <div>
+    <form method="POST" class="new-app">
         {% csrf_token %}
         {{ form.as_p }}
         <button type="submit" class="save btn btn-default">Save</button>
     </form>
+    </div>
+</section>
 {% endblock %}
