@@ -1,3 +1,4 @@
+
  /* body {
   font-family: 'Helvetica Neue', sans-serif;
   max-width: auto;
@@ -123,7 +124,8 @@ a.delete {
 }
 
 #intro-page{
-
+  margin-top: -63.98px;
+  background-image: url("../images/gotthis.jpg");
 }
 
 #resume-page{
@@ -146,4 +148,25 @@ a.delete {
 
 #resources-page{
 
+}
+
+
+
+nav{
+background-color:rgba(0, 171, 193, 0.37);
+}
+
+.parallax {
+  /* The image used */
+  background-image: url('../images/gotthis.jpg');
+  background-repeat: no-repeat;
+  background-size: auto;
+
+  /* Full height */
+  height: 100%;
+/* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }

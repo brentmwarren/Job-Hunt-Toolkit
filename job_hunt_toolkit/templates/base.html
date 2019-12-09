@@ -23,25 +23,27 @@
         <!-- <link rel="icon" href="images/transparent logo black.png" type="image/png"> -->
     </head>
     <body>
-        <nav>
-            <div class="nav-wrapper">
-                <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
-                <a href="#" class="brand-logo">Job Hunt Toolkit</a>
-                    <ul id="nav-mobile" class="right hide-on-med-and-down">
-                        {% if user.is_authenticated %}
-                            <li><strong>Welcome {{ user.first_name}}</strong></li>
-                            <li><a href="#">Getting Started</a></li>
-                            <li><a href="#">Resume/Linkedin Builder</a></li>
-                            <li><a href="#application-page">Application Tracker</a></li>
-                            <li><a href="#">Interviewing Tips</a></li>
-                            <li><a href="{% url 'logout' %}">Signout</a></li>
-                        {% else %}
-                            <li><a href="{% url 'register' %}">Register</a></li>
-                            <li><a href="{% url 'login' %}">Login</a></li>
-                        {% endif %}
-                    </ul>
-            </div>
-        </nav>
+        <div class="navbar-fixed">
+            <nav>
+                <div class="nav-wrapper">
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
+                    <a href="#" class="brand-logo">Job Hunt Toolkit</a>
+                        <ul id="nav-mobile" class="right hide-on-med-and-down">
+                            {% if user.is_authenticated %}
+                                <li><strong>Welcome {{ user.first_name}}</strong></li>
+                                <li><a href="#">Getting Started</a></li>
+                                <li><a href="#">Resume/Linkedin Builder</a></li>
+                                <li><a href="#application-page">Application Tracker</a></li>
+                                <li><a href="#">Interviewing Tips</a></li>
+                                <li><a href="{% url 'logout' %}">Signout</a></li>
+                            {% else %}
+                                <li><a href="{% url 'register' %}">Register</a></li>
+                                <li><a href="{% url 'login' %}">Login</a></li>
+                            {% endif %}
+                        </ul>
+                </div>
+            </nav>
+        </div>  
             <ul class="sidenav" id="mobile-demo">
                     {% if user.is_authenticated %}
                     Welcome {{ user.first_name }}

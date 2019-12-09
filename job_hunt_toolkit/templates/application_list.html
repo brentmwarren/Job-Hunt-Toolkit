@@ -2,12 +2,8 @@
 
 {% block content %}
 
-<section class="page" id="intro-page">
-        <h2>intro stuff</h2>
-        <h2>intro stuff</h2>
-        <h2>intro stuff</h2>
-        <h2>intro stuff</h2>
-        <h2>intro stuff</h2>
+<section class="page parallax" id="intro-page">
+        <span>merp</span>
 </section>
 
 <section class="page" id="resume-page">
@@ -53,7 +49,7 @@
         <tbody>
             {% for application in applications %}
                 <tr>
-                    <td><a href="{% url 'application_detail' pk=application.pk %}">{{application.name}}</a></td>
+                    <td><a href="{% url 'application_detail' pk=application.pk %}"></a>{{application.name}}</a></td>
                     <td><a href="{% url 'application_detail' pk=application.pk %}">{{application.job_title}}</a></td>
                     <td><a href="{% url 'application_detail' pk=application.pk %}">{{application.date_applied}}</a></td>
                 </tr>
