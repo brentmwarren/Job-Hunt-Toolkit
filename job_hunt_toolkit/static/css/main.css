@@ -176,7 +176,7 @@ nav{
 
 #intro-page{
   margin-top: -63.98px;
-  background-image: url("../images/blacknotes.jpg");
+  background-image: url("https://i.imgur.com/ZnFPkzi.jpg?1");
 }
 
 #intro-card {
@@ -374,4 +374,9 @@ textarea{
 
 li {
   padding: 12px;
+}
+
+.arrow {
+  color: rgba(0, 121, 121, 0.377);
+  padding-top: 30px;
 }
