@@ -216,6 +216,10 @@ nav{
   text-align: center;
 }
 
+#app-show-page{
+  background: green;
+}
+
 table{
   margin: auto;
   text-align: center;

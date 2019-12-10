@@ -1,25 +1,24 @@
 {% extends 'base.html' %}
 
 {% block content %}
-
-<h2>
-  {{ application.name }} application <a href="{% url 'application_edit' pk=application.pk %}">(edit)</a>
-  <a href="{% url 'application_delete' pk=application.pk %}" class="delete">delete</a>
-</h2>
-
-
-  {{ artist.name }}
-</a>
-<ul>
+<section class="page" id="app-show-page">
+  <div>
+    <h2>
+      {{ application.name }} application <a href="{% url 'application_edit' pk=application.pk %}">(edit)</a>
+      <a href="{% url 'application_delete' pk=application.pk %}" class="delete">delete</a>
+    </h2>
+  </div>
+    <ul>
         <li>          
-          <p>{{application.name}}</p>
-          <p>{{application.job_title}}</p>
-          <p>{{application.job_url}}</p>
-          <p>{{application.date_applied }}</p>
-          <p>{{application.company_notes }}</p>
-          <p>{{application.personal_notes}}</p>
+          <p>Company Name:{{application.name}}</p>
+          <p>Job Title:{{application.job_title}}</p>
+          <p>Posting URL:{{application.job_url}}</p>
+          <p>Date Applied:{{application.date_applied }}</p>
+          <p>Notes on the company:{{application.company_notes }}</p>
+          <p>Peronsonal Notes:{{application.personal_notes}}</p>
         </li>
+    </ul>
+</section>
 
-</ul>
 
 {% endblock %}
