@@ -203,17 +203,12 @@ nav{
 
 #targeting-page {
   background: rgb(151, 21, 21);
-  min-height: 50vh
-}
+  min-height: 50vh;
 }
 
 #application-page{
   text-align: center;
   justify-content: center;
-}
-
-.app-page{
-  text-align: center;
 }
 
 #app-show-page{
@@ -348,3 +343,18 @@ h2{
   justify-content: center !important;
   margin-left: 65vh;
 } */
+
+.app-page{
+  text-align: center;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.center-things{
+  text-align: center;
+  justify-content: center;
+}
+
+.col{
+ max-width: 300px;
+}
