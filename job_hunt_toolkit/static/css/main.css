@@ -198,12 +198,14 @@ nav{
 
 #linkedin-page{
   background: #4875B4;
-  min-height: 50vh
+  min-height: 50vh;
+  color: white;
 }
 
 #targeting-page {
   background: rgb(151, 21, 21);
   min-height: 50vh;
+  color: white;
 }
 
 #application-page{
@@ -255,11 +257,11 @@ textarea{
   height: 100px;
 }
 
-h2{
-  /* padding-top: 100px; */
+/* h2{
+  padding-top: 100px;
   text-align: center;
   margin: 0;
-}
+} */
 
 .save {
   margin-top: 15px;
@@ -356,5 +358,20 @@ h2{
 }
 
 .col{
- max-width: 300px;
+ max-width: 450px;
+ min-width: 25px;
+}
+
+.i-am-centered { 
+  margin: auto; max-width: 1200px;
+}
+
+@media screen and (max-width: 600px) {
+  .row .col.s3 {
+    width: auto;
+  }
+}
+
+li {
+  padding: 12px;
 }
