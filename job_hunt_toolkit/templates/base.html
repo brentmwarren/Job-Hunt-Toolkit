@@ -24,6 +24,12 @@
     </head>
     <body>
         <div class="navbar-fixed">
+                <ul id="dropdown1" class="dropdown-content">
+                        <li><a href="#!">one</a></li>
+                        <li><a href="#!">two</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#!">three</a></li>
+                </ul>
             <nav>
                 <div class="nav-wrapper">
                     <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
@@ -31,11 +37,10 @@
                         <ul id="nav-mobile" class="right hide-on-med-and-down">
                             {% if user.is_authenticated %}
                                 <li><strong>Welcome {{ user.first_name}}</strong></li>
-                                <li><a href="#intro-page">Getting Started</a></li>
                                 <li><a href="#resume-page">Resume/Linkedin Builder</a></li>
                                 <li><a href="#application-page">Application Tracker</a></li>
                                 <li><a href="#tips-page">Interviewing Tips</a></li>
-                                <li><a href="#resources-page">Resources</a></li>
+                                <li><a class="dropdown-trigger"  data-target="dropdown1" href="#!">Resources<i class="material-icons right">arrow_drop_down</i></a></li>
                                 <li><a href="{% url 'logout' %}">Signout</a></li>
                             {% else %}
                                 <li><a href="{% url 'register' %}">Register</a></li>
@@ -48,7 +53,6 @@
             <ul class="sidenav" id="mobile-demo">
                     {% if user.is_authenticated %}
                     Welcome {{ user.first_name }}
-                        <li><a href="#intro-page">Getting Started</a></li>
                         <li><a href="#resume-page">Resume/Linkedin Builder</a></li>
                         <li><a href="#application-page">Application Tracker</a></li>
                         <li><a href="#tips-page">Interviewing Tips</a></li>

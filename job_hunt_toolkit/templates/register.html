@@ -6,10 +6,10 @@
 <p style="background-color: salmon; padding: 10px;">{{ error }}</p>
 {% endif %}
 <section id="register-page" class="page">
-	<div class="welcome">
-			<h2>Welcome to the Job Hunt Toolkit</h2>
-			<p>A straight forward guide to finding a job in tech</p>
-	</div>
+		<div class="welcome">
+				<h1><strong>Welcome to the Job Hunt Toolkit</strong></h1>
+				<h5><strong>A straight forward guide to finding a job in tech</strong></h5>
+		</div>
 		<form class="new-app" id="register-form" action="{% url 'register' %}" method="POST">
 			{% csrf_token %}
 

@@ -121,10 +121,16 @@ nav{
   position: absolute;
 }
 
+@media screen and (max-width: 600px) {
+  .brand-logo {
+    margin-left: 0px;
+  }
+}
+
 .welcome {
   text-align: center;
-  color: black;
-  padding-top: 150px;
+  color: white;
+  padding-top: 120px;
 }
 
 /* .register-form {
@@ -181,6 +187,9 @@ nav{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  font-size: 20px;
+  text-align: center;
+  border-radius: 10px;
 }
 
 #resume-page{
@@ -190,6 +199,12 @@ nav{
 #linkedin-page{
   background: #4875B4;
   min-height: 50vh
+}
+
+#targeting-page {
+  background: rgb(151, 21, 21);
+  min-height: 50vh
+}
 }
 
 #application-page{
@@ -272,6 +287,8 @@ h2{
 .card-panel{
   min-width: 300px;
   max-height: 500px;
+  border-radius: 10px;
+  background: rgba(0, 121, 121, 0.842);
 }
 
 .card-panel {
