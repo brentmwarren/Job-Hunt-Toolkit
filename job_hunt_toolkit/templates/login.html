@@ -5,8 +5,14 @@
 <p style="background-color: salmon; padding: 10px;">{{ error }}</p>
 {% endif %}
 <section id="register-page" class="page">
+<div>
+	<div class="welcome">
+		<h2 class="welcometext">Welcome to the Job Hunt Toolkit</h2>
+		<p class="welcometext">A straight forward guide to finding a job in tech</p>
+	</div>
+
 	<div>
-		<form class="login-form" class="new-app" id="register-form" action="{% url 'login' %}" method="POST">
+		<form class="login-form new-app" ijd="register-form" action="{% url 'login' %}" method="POST">
 			{% csrf_token %}
 
 			<p>
@@ -28,5 +34,6 @@
 			<button type="submit" class="save btn btn-default">Login</button>
 		</form>
 	</div>
+</div>
 </section>
 {% endblock %}
