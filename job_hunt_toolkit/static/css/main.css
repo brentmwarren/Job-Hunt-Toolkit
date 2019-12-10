@@ -212,6 +212,10 @@ nav{
   justify-content: center;
 }
 
+.app-page{
+  text-align: center;
+}
+
 table{
   margin: auto;
   text-align: center;
@@ -224,6 +228,10 @@ table{
   margin-top: -100.98px;
   background-image: url("https://images.pexels.com/photos/97076/pexels-photo-97076.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
   background-size: cover;
+}
+
+#new-app{
+  padding-top: 120px;
 }
 
 .new-app{

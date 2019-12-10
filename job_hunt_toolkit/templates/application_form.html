@@ -2,8 +2,8 @@
 
 {% block content %}
 <section id="newapp-page" class="page">
+    <div id='new-app'>
     <h2>New Application</h2>
-    <div>
     <form method="POST" class="new-app">
         {% csrf_token %}
         {{ form.as_p }}

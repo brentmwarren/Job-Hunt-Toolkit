@@ -50,25 +50,28 @@
     </section>
 
 <section class="page" id="application-page">
-<h4>Applications <a href="{% url 'application_create' %}">(+)</a></h4>
-<table class="highlight centered">
-        <thead>
-            <tr>
-                <th>Company Name</th>
-                <th>Job Title</th>
-                <th>Date Applied</th>
-            </tr>
-        </thead>
-        <tbody>
-            {% for application in applications %}
+    <div class="app-page">
+        <h4>Applications  <a href="{% url 'application_create' %}"class="btn-floating btn-large cyan "> <i class="material-icons"> edit </i> </a></h4> 
+
+        <table class="highlight centered">
+            <thead>
                 <tr>
-                    <td><a href="{% url 'application_detail' pk=application.pk %}">{{application.name}}</a></td>
-                    <td><a href="{% url 'application_detail' pk=application.pk %}">{{application.job_title}}</a></td>
-                    <td><a href="{% url 'application_detail' pk=application.pk %}">{{application.date_applied}}</a></td>
+                    <th>Company Name</th>
+                    <th>Job Title</th>
+                    <th>Date Applied</th>
                 </tr>
-            {% endfor %}
-        </tbody>
-    </table>
+            </thead>
+            <tbody>
+                {% for application in applications %}
+                    <tr>
+                        <td><a href="{% url 'application_detail' pk=application.pk %}">{{application.name}}</a></td>
+                        <td><a href="{% url 'application_detail' pk=application.pk %}">{{application.job_title}}</a></td>
+                        <td><a href="{% url 'application_detail' pk=application.pk %}">{{application.date_applied}}</a></td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
 </section>
 
 <!-- ######################### -->
@@ -87,6 +90,9 @@
         <h2>resourcse</h2>
         <h2>resourcse</h2>
         <h2>resourcse</h2>
+        <div class="video-container">
+                <iframe width="853" height="480" src="//www.youtube.com/embed/Q8TXgCzxEnw?rel=0" frameborder="0" allowfullscreen></iframe>
+        </div>
 </section>
 
 {% endblock %}
