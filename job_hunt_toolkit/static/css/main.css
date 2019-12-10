@@ -120,6 +120,13 @@ nav{
   margin-left: 20px;
 }
 
+@media screen and (max-width: 600px) {
+  .brand-logo {
+    margin-left: 5px;
+    overflow-inline: visible;
+  }
+}
+
 /* .register-form {
   max-width: 300px;
   margin: auto;
@@ -154,6 +161,16 @@ nav{
   background-image: url("../images/blacknotes.jpg");
 }
 
+#intro-card {
+  position: absolute;
+  max-width: 500px;
+  height: 200px;
+  z-index: 15;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 #resume-page{
   min-height: 50vh;
 }
@@ -164,7 +181,15 @@ nav{
 }
 
 #application-page{
+  text-align: center;
+  justify-content: center;
+}
 
+table{
+  margin: auto;
+  text-align: center;
+  max-width: 600px;
+  justify-content: center;
 }
 
 #newapp-page{
@@ -231,23 +256,28 @@ h2{
 
 
 
-
-
-.intro-container {
-  padding-top: 35vh;
-  width: 50%;
-  margin: 0 auto;
-  min-width: 200px;
-  /* position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); */
+.card-panel{
+  min-width: 300px;
+  max-height: 500px;
 }
 
 .card-panel {
   /* min-width: 300px; */
   /* margin-left: 1px;
   margin-right: 1px; */
+}
+
+.intro-container {
+  display: grid;
+  padding-top: 35vh;
+  justify-content: center;
+  /* width: 50%; */
+  justify-content: center;
+  text-align: center;
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
 }
 
 /* .intro-card{

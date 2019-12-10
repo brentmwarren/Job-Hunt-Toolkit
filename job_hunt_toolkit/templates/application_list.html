@@ -5,7 +5,7 @@
 <section class="page parallax" id="intro-page">
 
     <div class="row container intro-container">
-        <div class="col s12 m5 center-align">
+        <div id="intro-card">
             <div class="card-panel teal darken-2">
                 <span class="white-text">I am a very simple card. I am good at containing small bits of information.
                 I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
@@ -16,7 +16,7 @@
                 </span>
             </div>
         </div>
-        <div class="col s12 m5 center-align">
+        <!-- <div class="col s12 m5 center-align">
                 <div class="card-panel teal darken-2">
                     <span class="white-text">I am a very simple card. I am good at containing small bits of information.
                     I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
@@ -26,7 +26,7 @@
                     I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
                     </span>
                 </div>
-            </div>
+        </div> -->
     </div>                    
 </section>
 
@@ -62,7 +62,7 @@
 
 <section class="page" id="application-page">
 <h4>Applications <a href="{% url 'application_create' %}">(+)</a></h4>
-<table class="highlight">
+<table class="highlight responsive-table centered">
         <thead>
             <tr>
                 <th>Company Name</th>
@@ -73,11 +73,10 @@
         <tbody>
             {% for application in applications %}
                 <tr>
-                    <td><a href="{% url 'application_detail' pk=application.pk %}"></a>{{application.name}}</a></td>
+                    <td><a href="{% url 'application_detail' pk=application.pk %}">{{application.name}}</a></td>
                     <td><a href="{% url 'application_detail' pk=application.pk %}">{{application.job_title}}</a></td>
                     <td><a href="{% url 'application_detail' pk=application.pk %}">{{application.date_applied}}</a></td>
                 </tr>
-            </a>
             {% endfor %}
         </tbody>
     </table>
