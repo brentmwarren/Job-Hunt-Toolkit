@@ -57,7 +57,8 @@ def application_edit(request, pk):
         form = ApplicationForm(request.POST, instance=application)
         if form.is_valid():
             artist = form.save()
-            return redirect('application_list', pk=application.pk)
+            # return redirect('application_list', pk=application.pk)
+            return render(request, 'application_detail.html', {'application': application}) 
     else:
         form = ApplicationForm(instance=application)
     return render(request, 'application_form.html', {'form': form})   
