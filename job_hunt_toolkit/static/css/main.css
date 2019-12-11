@@ -1,4 +1,6 @@
 
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
 /* body {
   font-family: 'Helvetica Neue', sans-serif;
   max-width: auto;
@@ -192,17 +194,26 @@ nav{
   border-radius: 10px;
 }
 
+@media screen and (max-width: 600px) {
+  #intro-card {
+    top: 30%;
+  }
+}
+
 #resume-page{
+  font-family: 'Lato', sans-serif;
   min-height: 50vh;
 }
 
 #linkedin-page{
+  font-family: 'Lato', sans-serif;
   background: #4875B4;
   min-height: 50vh;
   color: white;
 }
 
 #targeting-page {
+  font-family: 'Lato', sans-serif;
   background: rgb(151, 21, 21);
   min-height: 50vh;
   color: white;
@@ -226,7 +237,7 @@ table{
 
 #newapp-page{
   color: whitesmoke;
-  margin-top: -100.98px;
+  margin-top: -60.98px;
   background-image: url("https://images.pexels.com/photos/97076/pexels-photo-97076.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
   background-size: cover;
 }
@@ -257,23 +268,23 @@ textarea{
   height: 100px;
 }
 
-/* h2{
-  padding-top: 100px;
+h2{
   text-align: center;
   margin: 0;
-} */
+}
 
 .save {
   margin-top: 15px;
 }
 
 #tips-page{
+  font-family: 'Lato', sans-serif;
   background:#ffc400;
   min-height: 50vh
 }
 
 #resources-page{
-
+  font-family: 'Lato', sans-serif;
 }
 
 .parallax {
@@ -373,7 +384,8 @@ textarea{
 }
 
 li {
-  padding: 12px;
+  padding: 10px 5px;
+  font-size: 20px;
 }
 
 .arrow {
