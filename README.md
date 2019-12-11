@@ -11,24 +11,24 @@ This app was created to help people looking for a job who may want some guidelin
 
 
 Link to Heroku hosted project:
-
+https://job-hunt-toolkit.herokuapp.com/
 
 ## Technologies
-HTML
-CSS
-Python
-Materialize
-Django
-Jinja
-PostgreSQL
+HTML,
+CSS,
+Python,
+Materialize,
+Django,
+Jinja,
+PostgreSQL,
 
 ## Wish list/Future Development
 
--User can check off items in Resume/LinkedIn
--Progress bars for the user when they check items off
--Calendar functionality with the applications
--Reminder functionality, via email or text, with the applications
--A place to store a resume
+-User can check off items in Resume/LinkedIn,
+-Progress bars for the user when they check items off,
+-Calendar functionality with the applications,
+-Reminder functionality, via email or text, with the applications,
+-A place to store a resume,
 
 
 ## Developers
