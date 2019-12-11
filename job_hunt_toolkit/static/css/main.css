@@ -122,10 +122,19 @@ nav{
 
 .app-show-container{
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
   margin: auto;
+}
+
+.app-names{
+  color: rgb(54, 54, 54);
+  font-size: small;
+}
+
+.app-inputs{
+  font-size: 20px;
 }
 
 #app-details{
@@ -243,7 +252,7 @@ h2{
   }
 }
 
-li {
+.li-content {
   margin: 10px 5px;
   font-size: 18px;
   border-radius: 10px;

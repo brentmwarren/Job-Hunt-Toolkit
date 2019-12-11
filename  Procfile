@@ -1,1 +1,1 @@
-web: gunicorn job_hunt_toolkit_django.wsgi
+web: gunicorn job_hunt_toolkit.wsgi --log-file -

@@ -9,37 +9,25 @@
                 <h4>
                     {{ application.name }} application <a href="{% url 'application_edit' pk=application.pk %}"><i class="material-icons">create</i></a>
                     <a href="{% url 'application_delete' pk=application.pk %}" class="delete"><i class="material-icons">delete</i></a>
-                  </h4>
+                </h4>
                 <div class="col s3">
-                  <p>Job Title:<br>{{application.job_title}}</p>
-                  <p>Posting URL:<a href="{{application.job_url}}">{{application.job_url}}</a></p>
-                  <p>Date Applied:{{application.date_applied }}</p>
-                  <p>Notes on the company:{{application.company_notes }}</p>
-                  <p>Peronsonal Notes:{{application.personal_notes}}</p> 
+                    <p class="app-names">Job Title:</p>
+                    <p class="app-inputs">{{application.job_title}}</p>
+                    <br>
+                    <p class="app-names">Posting URL:</p>
+                    <p class="app-inputs"><a href="{{application.job_url}}">{{application.job_url}}</a></p>
+                    <br>
+                    <p class="app-names">Date Applied:</p>
+                    <p class="app-inputs">{{application.date_applied }}</p>
+                    <br>
+                    <p class="app-names">Notes on the company:</p>
+                    <p class="app-inputs">{{application.company_notes }}</p>
+                    <br>
+                    <p class="app-names">Peronsonal Notes:</p> 
+                    <p class="app-inputs">{{application.personal_notes}}</p>
                 </div>
             </div>
         </div>
     </div>
 </section>
-
-<!-- <section id="app-show-page" class="page">
-		<div class="welcome">
-				<h2>Application Notes</h2>
-		</div>
-		<div class="new-app">
-        <h4>
-            {{ application.name }} application <a href="{% url 'application_edit' pk=application.pk %}">(edit)</a>
-            <a href="{% url 'application_delete' pk=application.pk %}" class="delete">delete</a>
-        </h4>
-          <p>Job Title:{{application.job_title}}</p>
-          <p>Posting URL:{{application.job_url}}</p>
-          <p>Date Applied:{{application.date_applied }}</p>
-          <p>Notes on the company:{{application.company_notes }}</p>
-          <p>Peronsonal Notes:{{application.personal_notes}}</p> 
-    
-    </div>
-		
-</section> -->
-
-
 {% endblock %}

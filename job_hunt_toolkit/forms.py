@@ -14,9 +14,3 @@ class ApplicationForm(forms.ModelForm):
         'company_notes', 
         'personal_notes'
         )
-
-# class ChecklistForm(forms.ModelForm):
-
-#     class Meta:
-#         model = Checklist
-#         fields = ('item_name','checkbox')
