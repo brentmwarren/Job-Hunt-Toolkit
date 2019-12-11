@@ -1,100 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 
-/* body {
-  font-family: 'Helvetica Neue', sans-serif;
-  max-width: auto;
-  margin: auto;
-  padding: 2em 1em;
-} */
-
-/* nav a {
-  border: 1px solid black;
-  margin: .5em;
-  padding: .5em;
-  background-color: #eeeeee;
-} */
-
-/* nav a:hover {
-  background-color: orange;
-  color: blue;
-} */
-
-/* a,a:visited {
-  text-decoration: none;
-  color: blue;
-} */
-
-/* a:hover {
-  background-color: #ccc;
-} */
-
-/* ul {
-  list-style-type: none;
-} */
-
-/* li {
-  margin: .25em;
-} */
-
-/* h1 {
-  font: inherit;
-  color: inherit;
-  letter-spacing: -.05em;
-  text-decoration: none;
-  border-bottom: 1px solid black;
-} */
-
-/* h2>a {
-  font-size: .75em;
-} */
-
-/* textarea {
-  display: block;
-  border: solid 1px black;
-  background: whitesmoke;
-} */
-
-/* input {
-  display: block;
-  margin: 5px 0 20px 0;
-  padding: 9px;
-  border: solid 1px black;
-  width: 300px;
-  background: whitesmoke;
-} */
-
-input[type=submit],
-a.delete {
-  width: auto;
-  padding: 9px 15px;
-  background-color: gray;
-  border: 0;
-  font-size: 14px;
-  color: #FFFFFF;
-}
-
-a.delete {
-  background-color: red;
-}
-/* .user-info {
-  float: right;
-} */
-
-/* a.fav {
-  text-decoration: none;
-  color: red;
-} */
-
-/* a.no-fav {
-  text-decoration: none;
-  color: black;
-} */
-
-/* .fav:visited,
-.no-fav:visited {
-  text-decoration: none;
-} */
 
 /* ################## above Code from spoofy #################### */
 
@@ -135,40 +41,12 @@ nav{
   padding-top: 120px;
 }
 
-/* .register-form {
-  max-width: 300px;
-  margin: auto;
-  margin-top: 15vh;
-} */
-
 #register-page{
-  /* min-height: 500px; */
   color: whitesmoke;
   margin-top: -63.98px;
   background-image: url("https://images.pexels.com/photos/317355/pexels-photo-317355.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
   background-size: cover;
-  /* position: relative; */
 }
-
-/* @media screen and (max-width: 600px) {
-  .welcome {
-    padding-top: 0px;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  h2{
-    padding-top: 0px;
-  }
-} */
-
-/* #register-form{
-  margin-top: 25vh;
-  position: absolute; 
-  top: 35%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-} */
 
 .login-form {
     max-width: 300px;
@@ -178,7 +56,9 @@ nav{
 
 #intro-page{
   margin-top: -63.98px;
-  background-image: url("https://i.imgur.com/ZnFPkzi.jpg?1");
+  background-image: url("https://i.postimg.cc/MpdTK8NL/black-field-notes-2608409.jpg");
+  /* background-image: url("https://i.imgur.com/ZnFPkzi.jpg?1");
+  background-image: url("https://imgur.com/ue42pVf"); */
 }
 
 #intro-card {
@@ -202,7 +82,8 @@ nav{
 
 #resume-page{
   font-family: 'Lato', sans-serif;
-  min-height: 50vh;
+  min-height: 60vh;
+  background-image: url("https://images.pexels.com/photos/62693/pexels-photo-62693.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
 }
 
 #linkedin-page{
@@ -210,22 +91,45 @@ nav{
   background: #4875B4;
   min-height: 50vh;
   color: white;
+  background-image: url("https://images.pexels.com/photos/3167220/pexels-photo-3167220.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 #targeting-page {
   font-family: 'Lato', sans-serif;
   background: rgb(151, 21, 21);
-  min-height: 50vh;
+  background-image: url("https://images.pexels.com/photos/3112019/pexels-photo-3112019.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 60vh;
   color: white;
 }
 
 #application-page{
   text-align: center;
   justify-content: center;
+  min-height: 40vh;
 }
 
 #app-show-page{
-  background: green;
+  margin-top: -63.98px;
+  background-image: url("https://images.pexels.com/photos/164642/pexels-photo-164642.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-image: cover;
+  color: black;
+  /* min-height: 100vh; */
+}
+
+.app-show-container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: auto;
+}
+
+#app-details{
+  text-align: left;
 }
 
 table{
@@ -233,6 +137,7 @@ table{
   text-align: center;
   max-width: 600px;
   justify-content: center;
+  margin-bottom: 80px;
 }
 
 #newapp-page{
@@ -280,20 +185,23 @@ h2{
 #tips-page{
   font-family: 'Lato', sans-serif;
   background:#ffc400;
-  min-height: 50vh
+  min-height: 50vh;
+  background-image: url("https://images.pexels.com/photos/32246/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
 }
 
 #resources-page{
   font-family: 'Lato', sans-serif;
+  min-height: 50vh;
+  background-image: url("https://images.pexels.com/photos/242236/pexels-photo-242236.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-size: contain;
 }
 
 .parallax {
   /* The image used */
-  background-image: url('../images/gotthis.jpg');
   background-repeat: no-repeat;
   background-size: auto;
   /* Full height */
-  height: 100%;
+  /* height: 100%; */
 /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
@@ -301,61 +209,12 @@ h2{
   background-size: cover;
 }
 
-
-
-
 .card-panel{
   min-width: 300px;
   max-height: 500px;
   border-radius: 10px;
   background: rgba(0, 121, 121, 0.842);
 }
-
-.card-panel {
-  /* min-width: 300px; */
-  /* margin-left: 1px;
-  margin-right: 1px; */
-}
-/* 
-.intro-container {
-  display: grid;
-  padding-top: 35vh;
-  justify-content: center;
-  width: 50%;
-  justify-content: center;
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-} */
-
-/* .intro-card{
-  color: whitesmoke;
-  padding: 10px;
-  background-color: rgba(245, 245, 245, 0.158);
-  justify-content: center;
-} */
-
-
-/* .intro-card {
-  width: 70px;
-  height: 300px;
-  border: 1px solid #c3c3c3;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-align-content: center;
-  align-content: center;
-} */
-
-/* .intro-card {
-  display: inline-block;
-  padding-top: 35vh;
-  justify-content: center !important;
-  margin-left: 65vh;
-} */
 
 .app-page{
   text-align: center;
@@ -368,13 +227,14 @@ h2{
   justify-content: center;
 }
 
-.col{
- max-width: 450px;
- min-width: 25px;
-}
 
 .i-am-centered { 
   margin: auto; max-width: 1200px;
+}
+
+.col{
+  max-width: 450px;
+  min-width: 25px;
 }
 
 @media screen and (max-width: 600px) {
@@ -384,11 +244,17 @@ h2{
 }
 
 li {
-  padding: 10px 5px;
-  font-size: 20px;
+  margin: 10px 5px;
+  font-size: 18px;
+  border-radius: 10px;
+  text-align: left;
 }
 
 .arrow {
   color: rgba(0, 121, 121, 0.377);
   padding-top: 30px;
+}
+
+html {
+  scroll-behavior: smooth;
 }
