@@ -6,9 +6,9 @@ This appplication was created to help people looking for a job who may want some
 
 **Live Site - https://job-hunt-toolkit.herokuapp.com/**
 
-- ![welcome Screen](job_hunt_toolkit/static/images/welcome_screen.png)
-- ![New Application](job_hunt_toolkit/static/images/application_edit.png)
-- ![Application Tracker](job_hunt_toolkit/static/images/applicaiton_tracker.png)
+![welcome Screen](job_hunt_toolkit/static/images/welcome_screen.png)
+![New Application](job_hunt_toolkit/static/images/application_edit.png)
+![Application Tracker](job_hunt_toolkit/static/images/applicaiton_tracker.png)
 
 <!-- <p align="center">
   <img src="job_hunt_toolkit/static/images/welcome_screen.png" alt="Welcome Scrren"
