@@ -1,19 +1,34 @@
 # The Job Hunt Toolkit
 
 ## About the project
-This app was created to help people looking for a job who may want some guidelines to getting started. Specifically, someone looking for a tech job around the bay area. It contains blog contain the guide a user and a tracker to organize applications
 
+This appplication was created to help people looking for a job who may want some guidelines to getting started. Specifically, someone looking for a tech job around the bay area. It contains blog content and a tracker to organize applications
+
+**Live Site - https://job-hunt-toolkit.herokuapp.com/**
 
 ## Wireframe
-- ![wireframe sketch](job_hunt_toolkit/static/images/wireframe1.png)
-- ![wireframe sketch](job_hunt_toolkit/static/images/wireframe2.png)
-- ![wireframe sketch](job_hunt_toolkit/static/images/wireframe3.png)
 
+- ![welcome Screen](job_hunt_toolkit/static/images/welcome_screen.png)
+- ![New Application](job_hunt_toolkit/static/images/application_edit.png)
+- ![Application Tracker](job_hunt_toolkit/static/images/applicaiton_tracker.png)
 
-Link to Heroku hosted project:
-- https://job-hunt-toolkit.herokuapp.com/;
+<p align="center">
+  <img src="job_hunt_toolkit/static/images/welcome_screen.png" alt="Welcome Scrren"
+	title="Welcome Screen" align="center" width="600" />
+</p>
+
+<p align="center">
+  <img src="job_hunt_toolkit/static/images/application_edit.png" alt="New Application"
+	title="New Application" align="center" width="600" />
+</p>
+
+<p align="center">
+  <img src="job_hunt_toolkit/static/images/applicaiton_tracker.png" alt="Application Tracker"
+	title="Application Tracker" align="center" width="600" />
+</p>
 
 ## Technologies
+
 - HTML
 - CSS
 - Python
@@ -29,7 +44,3 @@ Link to Heroku hosted project:
 - Calendar functionality with the applications,
 - Reminder functionality, via email or text, with the applications,
 - A place to store a resume,
-
-
-## Developers
-- Brent Warren: https://git.generalassemb.ly/bwarren
